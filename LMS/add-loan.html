@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>LMS</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+
+    <body>
+        <!-- TOP NAV BAR START -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+                <!-- Offcanvas Trigger Starts -->
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand text-uppercase fw-bold me-auto ms-3"
+                    href="#">NK
+                    Library</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Offcanvas Trigger ends -->
+
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <form class="d-flex ms-auto" role="search">
+                        <div class="input-group my-3 my-lg-0">
+                            <input type="text" class="form-control"
+                                placeholder="Search"
+                                aria-label="Recipient's username"
+                                aria-describedby="button-addon2" />
+                            <button
+                                class="btn btn-outline-secondary btn-primary text-white"
+                                type="button"
+                                id="button-addon2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img class="profile"
+                                    src="./assets/images/star-wars.jpg" />
+                                Admin
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">My
+                                        Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Change
+                                        Password</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="./index.html">Log Out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- TOP NAV BAR ENDS -->
+        <!--  -->
+
+        <!-- OFFCANVAS STARTS -->
+
+        <div class="offcanvas offcanvas-start bg-black text-white sidebar-nav"
+            tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <div
+                            class="text-secondary small text-uppercase fw-bold">Core</div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="#"><i
+                                class="fa-solid fa-gauge me-3"></i>DashBoard</a>
+                    </li>
+                    <li class="my-0">
+                        <hr />
+                    </li>
+                    <li class="nav-item">
+                        <div
+                            class="text-secondary small text-uppercase fw-bold">
+                            Inventory
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sidebar-link"
+                            data-bs-toggle="collapse" href="#bookmgmt"
+                            role="button"
+                            aria-expanded="false" aria-controls="bookmgmt">
+                            <i class="fa-solid fa-book me-3"></i>
+                            Book Management
+                            <span class="right-icon float-end">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </a>
+                        <div class="collapse" id="bookmgmt">
+                            <div>
+                                <ul class="navbar-nav ps-3">
+                                    <li>
+                                        <a href="./add-books.html"
+                                            class="nav-link active">
+                                            <i
+                                                class="fa-solid fa-plus me-2"></i>
+                                            Add new
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./manage-books.html"
+                                            class="nav-link active">
+                                            <i
+                                                class="fa-solid fa-bars-progress me-2"></i>
+                                            Manage All
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link sidebar-link"
+                            data-bs-toggle="collapse" href="#studentmgmt"
+                            role="button"
+                            aria-expanded="false" aria-controls="studentmgmt">
+                            <i class="fas fa-users me-2"></i>
+                            Students
+                            <span class="right-icon1 float-end">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </a>
+                        <div class="collapse" id="studentmgmt">
+                            <div>
+                                <ul class="navbar-nav ps-3">
+                                    <li>
+                                        <a href="#" class="nav-link active">
+                                            <i
+                                                class="fa-solid fa-plus me-2"></i>
+                                            Add new
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./manage-students.html"
+                                            class="nav-link active">
+                                            <i
+                                                class="fa-solid fa-bars-progress me-2"></i>
+                                            Manage All
+                                        </a>
+                                    </li>
+                                </ul>
+                                <li class="my-0">
+                                    <hr />
+                                </li>
+                                <li class="nav-item">
+                                    <div
+                                        class="text-secondary small text-uppercase fw-bold">
+                                        Buissness
+                                        <li class="nav-item">
+                                            <a class="nav-link sidebar-link"
+                                                data-bs-toggle="collapse"
+                                                href="#bookloan" role="button"
+                                                aria-expanded="false"
+                                                aria-controls="bookloan">
+                                                <i
+                                                    class="fas fa-book-open me-2"></i>
+                                                Book Loan
+                                                <span
+                                                    class="right-icon2 float-end">
+                                                    <i
+                                                        class="fa-solid fa-chevron-down"></i>
+                                                </span>
+                                            </a>
+                                            <div class="collapse" id="bookloan">
+                                                <div>
+                                                    <ul class="navbar-nav ps-3">
+                                                        <li>
+                                                            <a href="#"
+                                                                class="nav-link active">
+                                                                <i
+                                                                    class="fa-solid fa-plus me-2"></i>
+                                                                Add new
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"
+                                                                class="nav-link active">
+                                                                <i
+                                                                    class="fa-solid fa-bars-progress me-2"></i>
+                                                                Manage All
+                                                            </a>
+                                                        </li>
+                                                    </div>
+
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link sidebar-link"
+                                                            data-bs-toggle="collapse"
+                                                            href="#subsription"
+                                                            role="button"
+                                                            aria-expanded="false"
+                                                            aria-controls="subsription">
+                                                            <i
+                                                                class="fa-solid fa-indian-rupee-sign me-3"></i>
+                                                            Subsription
+                                                            <span
+                                                                class="right-icon3 float-end">
+                                                                <i
+                                                                    class="fa-solid fa-chevron-down"></i>
+                                                            </span>
+                                                        </a>
+                                                        <div class="collapse"
+                                                            id="subsription">
+                                                            <div>
+                                                                <ul
+                                                                    class="navbar-nav ps-3">
+                                                                    <li>
+                                                                        <a
+                                                                            href="#"
+                                                                            class="nav-link active">
+                                                                            <i
+                                                                                class="fa-solid fa-plus me-2"></i>
+                                                                            Plans
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a
+                                                                            href="#"
+                                                                            class="nav-link active">
+                                                                            <i
+                                                                                class="fa-solid fa-money-check me-2"></i>
+                                                                            Purchase
+                                                                            History
+                                                                        </a>
+                                                                    </li>
+                                                                </li>
+                                                            </div>
+                                                            <li>
+                                                                <hr>
+                                                            </li>
+                                                            <li
+                                                                class="nav-item">
+                                                                <a
+                                                                    class="nav-link active"
+                                                                    aria-current="page"
+                                                                    href="#">
+                                                                    <i
+                                                                        class="fa-solid fa-right-from-bracket me-3"></i>Log
+                                                                    Out
+                                                                </a>
+                                                            </li>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+
+                                        <!-- OFFCANVAS ENDS -->
+                                        <!--  -->
+
+                                        <!-- MAIN STARTS -->
+
+                                        <main class="mt-1 pt-3">
+                                            <div class="container-fluid">
+
+                                                <!-- CARDS -->
+
+                                                <div
+                                                    class="row dashboard-counts">
+                                                    <div class="col-md-12">
+                                                        <h4
+                                                            class="fw-bold text-uppercase ">Add
+                                                            Students</h4>
+                                                    </div>
+
+                                                    <div col-md-6>
+                                                        <div class="card">
+                                                            <div
+                                                                class="card-header">
+                                                                Details of
+                                                                Student
+                                                            </div>
+                                                            <div
+                                                                class="card-body">
+                                                                <form
+                                                                    action="#">
+                                                                    <div
+                                                                        class="row">
+                                                                        <div
+                                                                            class="col-md-6">
+                                                                            <div
+                                                                                class="mb-3">
+                                                                                <label
+                                                                                    for="exampleInputPassword1"
+                                                                                    class="form-label">Select
+                                                                                    Book
+                                                                                </label>
+                                                                                <select
+                                                                                    class="form-control">
+                                                                                    <option
+                                                                                        value>Please
+                                                                                        Select
+                                                                                    </option>
+
+                                                                                    <option
+                                                                                        value="Female">SK
+                                                                                        BOOK</option>
+                                                                                    <option
+                                                                                        value="other">as
+                                                                                        book
+                                                                                    </option>
+                                                                                    <option
+                                                                                        value="not">Not
+                                                                                        book
+                                                                                        lam</option>
+                                                                                </select>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="col-md-6">
+                                                                            <div
+                                                                                class="mb-3">
+                                                                                <label
+                                                                                    for="exampleInputPassword1"
+                                                                                    class="form-label">Select
+                                                                                    Student
+                                                                                </label>
+                                                                                <select
+                                                                                    class="form-control">
+                                                                                    <option
+                                                                                        value>Please
+                                                                                        Select
+                                                                                    </option>
+
+                                                                                    <option
+                                                                                        value="Female">SK
+                                                                                        BOOK</option>
+                                                                                    <option
+                                                                                        value="other">as
+                                                                                        book
+                                                                                    </option>
+                                                                                    <option
+                                                                                        value="not">Not
+                                                                                        book
+                                                                                        lam</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-md-6">
+                                                                            <div
+                                                                                class="mb-3">
+                                                                                <label
+                                                                                    for="exampleInputPassword1"
+                                                                                    class="form-label">Loan Date</label>
+                                                                                <input
+                                                                                    type="date"
+                                                                                    class="form-control"
+                                                                                    id="exampleInputPassword1">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-md-6">
+                                                                            <div
+                                                                                class="mb-3">
+                                                                                <label
+                                                                                    for="exampleInputPassword1"
+                                                                                    class="form-label">Return/Due date</label>
+                                                                                <input
+                                                                                    type="date"
+                                                                                    class="form-control"
+                                                                                    id="exampleInputPassword1">
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <button
+                                                                        type="submit"
+                                                                        class="btn btn-success my-3">Add</button>
+                                                                    <button
+                                                                        type="Cancel"
+                                                                        class="btn btn-secondary my-3">Cancel</button>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div col-md-6>
+                                                        
+                                                    </div>
+                                                </div>
+
+                                            </main>
+
+                                            <!-- MAIN ENDS -->
+
+                                            <script
+                                                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                                                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                                                crossorigin="anonymous"></script>
+                                            <script
+                                                src="https://kit.fontawesome.com/bb6a6f0c63.js"
+                                                crossorigin="anonymous"></script>
+                                        </body>
+
+                                    </html>
