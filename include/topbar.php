@@ -42,13 +42,13 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="#">My Profile</a></li>
-                <li><a class="dropdown-item" href="./forgot.html">Change
+                <li><a class="dropdown-item" href="<?php echo BASE_URL . "forgot-pass.php" ?>">Change
                     Password</a></li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./index.html">Log Out</a>
+                  <a class="dropdown-item" href="<?php echo BASE_URL . "index.php" ?>">Log Out</a>
                 </li>
               </ul>
             </li>
